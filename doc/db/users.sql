@@ -1,0 +1,7 @@
+CREATE TABLE users(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255) NOT NULL,
+  email TEXT,
+  password TEXT,
+  up_date TIMESTAMP
+);
