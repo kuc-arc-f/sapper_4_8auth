@@ -18,7 +18,13 @@ polka() // You can also use Express
 			secret: 'secret key',
 			resave: true,
 			saveUninitialized: true,			
-			store: new FileStore(),
+			store: new FileStore({
+				ttl: 30 * 86400 
+			}),
+			cookie: {
+				//max= 90 days
+				maxAge: 90 * 24 * 60 * 1000,				
+			 }			
 		}),		
 		compression({ threshold: 0 }),
 		sirv('static', { dev }),
