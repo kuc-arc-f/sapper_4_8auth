@@ -30,16 +30,17 @@ app_config.js
 DB_FILE_NAME: "./db1.sqlite",
 ```
 
-* users table:
-```
-CREATE TABLE users(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR(255) NOT NULL,
-  email TEXT,
-  password TEXT,
-  up_date TIMESTAMP
-);
-```
+***
+* table create:
+
+* users
+
+doc/db/users.sql
+
+* todos
+
+doc/db/todos.sql
+
 ***
 ### Start server
 * start :

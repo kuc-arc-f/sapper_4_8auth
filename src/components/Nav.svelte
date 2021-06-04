@@ -53,9 +53,11 @@
     <li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
     <li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
     <!--
-    <li><a rel=prefetch aria-current="{segment === 'test_csrf' ? 'page' : undefined}" href="test_csrf">Test</a>
+    <li><a rel=prefetch aria-current="{segment === 'test' ? 'page' : undefined}" href="test">Test</a>
     </li>    
     -->
+    <li><a rel=prefetch aria-current="{segment === 'todos' ? 'page' : undefined}" href="todos">Todos</a>
+    </li>    
     <li><a rel=prefetch aria-current="{segment === 'tasks' ? 'page' : undefined}" href="tasks">Tasks</a>
     </li>    
     <li><a rel=prefetch aria-current="{segment === 'login' ? 'page' : undefined}" href="login">[ Login ]</a>
